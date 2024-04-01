@@ -40,7 +40,7 @@ window.requestAnimationFrame(draw);
 const ball = {
   x: canvas.width / 2,
   y: canvas.height / 3,
-  vx: Math.floor((Math.random() * 10)) + 5,
+  vx: Math.floor(((Math.random() * 10)) + 5) * (Math.floor(Math.random() * 2) > 0 ? +1 : -1),
   vy: Math.floor((Math.random() * 5)) + 2,
   radius: 25,
   color: next_color(color_wheel[0]),
